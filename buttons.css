@@ -1,0 +1,12 @@
+:root {
+    --color-btn-size: 3rem;
+}
+
+.colorBtn {
+    width: var(--color-btn-size);
+    height: var(--color-btn-size);
+}
+
+.colorBtnText {
+    visibility: hidden;
+}

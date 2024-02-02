@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="body_styling.css">
+    <link rel="stylesheet" href="canvas.css">
+    <link rel="stylesheet" href="buttons.css">
+</head>
+<body>
+    <canvas class="paintCanvas" id="paintCanvas" width="700" height="400">
+        200px by 200px area where the user can draw.
+    </canvas>
+    <div class="color-chooser">
+        <p>Current color:</p>
+        <p class="currentColor" id="currentColor">black</p>
+        <div class="colors-top-row">
+            <button class="colorBtn"><span class="colorBtnText">black</span></button>
+            <button class="colorBtn"><span class="colorBtnText">darkgray</span></button>
+            <button class="colorBtn"><span class="colorBtnText">darkred</span></button>
+            <button class="colorBtn"><span class="colorBtnText">darkyellow</span></button>
+            <button class="colorBtn"><span class="colorBtnText">darkgreen</span></button>
+            <button class="colorBtn"><span class="colorBtnText">darkcyan</span></button>
+            <button class="colorBtn"><span class="colorBtnText">darkblue</span></button>
+            <button class="colorBtn"><span class="colorBtnText">darkviolet</span></button>
+        </div>
+        <div class="colors-bottom-row">
+            <button class="colorBtn"><span class="colorBtnText">white</span></button>
+            <button class="colorBtn"><span class="colorBtnText">gray</span></button>
+            <button class="colorBtn"><span class="colorBtnText">red</span></button>
+            <button class="colorBtn"><span class="colorBtnText">yellow</span></button>
+            <button class="colorBtn"><span class="colorBtnText">green</span></button>
+            <button class="colorBtn"><span class="colorBtnText">cyan</span></button>
+            <button class="colorBtn"><span class="colorBtnText">blue</span></button>
+            <button class="colorBtn"><span class="colorBtnText">violet</span></button>
+        </div>
+    </div>
+
+    <fieldset>
+        <legend>Select a pen size:</legend>
+        <div class="pens-chooser">
+            <input type="radio" name="pen-size" id="penSize1" class="pen-size" value="1" checked>
+            <label for="penSize1">1px</label>
+
+            <input type="radio" name="pen-size" id="penSize3" class="pen-size" value="3">
+            <label for="penSize3">3px</label>
+
+            <input type="radio" name="pen-size" id="penSize5" class="pen-size" value="5">
+            <label for="penSize5">5px</label>
+
+            <input type="radio" name="pen-size" id="penSize10" class="pen-size" value="10">
+            <label for="penSize10">10px</label>
+        </div>
+    </fieldset>
+    <script src="drawing.js" defer></script>
+</body>
+</html>
